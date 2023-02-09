@@ -1,6 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4U</title>
+    <link rel="stylesheet" href="earnstyle.css">
+    <link rel="stylesheet" href="transactionstyle.css">
+    <link rel="stylesheet" href="redrawalstyle.css">
+</head>
+<body>
 
-
-    <!-- <header class="nav-header">
+    <header class="nav-header">
         <nav class="head-nav">
             <div id="toggler" class="container">
             <div class="bar1"></div>
@@ -16,17 +27,17 @@
                 <h3>VIP 1</h3>
             </div>
         </nav>
-    </header> -->
+    </header>
 
     <!-- sidenav -->
-        <!-- <header class="test-head">
+        <header class="test-head">
             <div  id="sidenav" class="sidenav-remove">
             <nav class="sidenav">
                 <div class="sidenav-menu">
                     <span><a href="earn_page.html">Earn</a></span>
                     <span><a href="">Account</a></span>
-                    <span><a href="redrawalpage.html">Withdraw</a></span>
-                    <span><a href="depositpage.html">Deposit</a></span>
+                    <span><a href="transactionpage.html">Transactions</a></span>
+                    <span><a href="">Notification</a></span>
                     <span><a href="">Referalls</a></span>
                     <span><a href="">How to earn</a></span>
                     <span><a href="">About Us</a></span>
@@ -38,15 +49,15 @@
                 </div>
             </nav>
             </div>
-        </header> -->
+        </header>
 
         <section class="trans-heading">
-            <h1>Deposit</h1>
+            <h1>Withdrawal</h1>
         </section>
 
 
         <section class="balance-field">
-            <div class="balance-wrapd">
+            <div class="balance-wrap">
             <article class="balance-wrapper">
                 <div class="balance-user">
                     <h2>Username</h2>
@@ -55,7 +66,7 @@
             <div class="splitter">
                 <div class="balance-top">
                     <h1>Balance</h1>
-                    <h2>0frs</h2>
+                    <h2>5,000frs</h2>
                     <!-- <img src="../assets/icons/earn.png" alt="wallet pic" width="100px" height="100px"> -->
                 </div>
                 <div class="balance-btm">
@@ -69,7 +80,7 @@
 
         <section class="form-design">
             <div class="withdrawal-head">
-                <h1>Deposit form</h1>
+                <h1>Withdrawal form</h1>
             </div>
             <div class="form-wrapper">
                 <form action="" class="form-inputs">
@@ -79,14 +90,16 @@
                     <label for="">
                         <input class="input-class" type="text" maxlength="6" placeholder="Amount" >
                     </label>
-
+                    <label for="">
+                        <input class="input-class" type="text" maxlength="9" placeholder="Password" >
+                    </label>
                     <div class="payment-method">
                         <p>Payment method</p>
                     <label for="">
-                    <input type="radio" name="payment" value="Momo" checked><img src="../assets/icons/Mtn.png" alt="mtn logo" width="100px" height="100px">
+                    <input type="radio" name="payment" value="Momo" checked><img src="../assets/icons/Mtn.png" alt="mtn logo" width="100px" height="100px"></input>
                     </label>
                     <label for="">
-                    <input type="radio" name="payment" value="OrangeMoney"><img src="../assets/icons/Orange.png" alt="OrangeMoney" width="100px" height="100px">
+                    <input type="radio" name="payment" value="OrangeMoney"><img src="../assets/icons/Orange.png" alt="OrangeMoney" width="100px" height="100px"></input>
                     </label>
                     </div>
             <label for="">
@@ -99,7 +112,7 @@
 
         <section class="withdrawal-history">
             <div class="withdrawal-head">
-                <h1>Deposit history</h1>
+                <h1>Withdraw history</h1>
             </div>
 
             <div class="history-title">
@@ -197,3 +210,6 @@
         </section>
 
 
+        <script src="scripts/sidenav.js"></script>
+</body>
+</html>

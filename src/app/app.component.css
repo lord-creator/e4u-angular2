@@ -1,0 +1,11 @@
+app-menunav{
+    z-index: 100;
+    position: fixed;
+    bottom: -3vh;
+    background-color: rgb(43, 37, 102);
+    border-radius: 20px 20px 0px 0px;
+    padding: 0px !important;
+    /* color: rgb(202, 199, 194) !important; */
+
+    
+}

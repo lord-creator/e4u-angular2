@@ -8,6 +8,18 @@ import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { EarnComponent } from './earn/earn.component';
+import { AccountComponent } from './account/account.component';
+import { ReferallsComponent } from './referalls/referalls.component';
+import { MenunavComponent } from './menunav/menunav.component';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -15,12 +27,24 @@ import { NotfoundComponent } from './notfound/notfound.component';
     LoginComponent,
     LandingComponent,
     DepositComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    TransactionsComponent,
+    EarnComponent,
+    AccountComponent,
+    ReferallsComponent,
+    MenunavComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

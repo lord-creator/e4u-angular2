@@ -1,0 +1,444 @@
+:root{
+    --primaryfontcolor: rgb(108, 11, 235);
+    --bgprimary: rgba(228, 228, 228, 0.753);
+    --maintext: rgb(107, 107, 107);
+    --shadow: rgb(0,0,0,0.5);
+    --primarycolor: rgb(82, 13, 172);
+    --primarycoloropacity: rgba(82, 13, 172,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.account-title{
+    width: 70vw;
+    height: 150px;
+    margin: 20px auto;
+    background: url(../assets/accountDesign.png);
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.account-info-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--primarycoloropacity);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.left-side-details{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    background-color: var(--primarycoloropacity) ;
+    box-shadow: 2px 5px 5px var(--shadow);
+    width: 400px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.left-side-icon{
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    box-shadow: 2px 5px 7px var(--shadow);
+}
+
+.left-side-info{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
+
+.info-ref{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side-info h3{
+    font-size: smaller;
+}
+
+/* balance design for account bar  */
+
+.left-side-balance{
+    background-color: var(--primarycoloropacity);
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 5px 5px var(--shadow);
+}
+
+.sides{
+    color: white;
+}
+
+.vip-logo{
+    background-color: #ccc;
+    box-sizing: 2px 5px 5px var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    padding: 5px;
+    box-shadow: 2px 5px 5px var(--shadow);
+}
+
+.sides h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.account-form{
+    width: 70vw;
+    height: 300px;
+    background-color: white;
+    box-shadow: 2px 5px 5px var(--shadow);
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-head{
+    height: 20%;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(0,0,0,0.5);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.account-input{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+.acc-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.acc-inputs:focus{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.acc-inputss:disabled:hover{
+    cursor: not-allowed;
+    border: 1px solid rgba(255, 0, 0, 0.404);
+}
+
+.acc-inputs h2{
+    width: 30%;
+    background-color: white;
+    margin-bottom: 5px;
+    height: 40px;
+    color: var(--maintext);
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid silver;
+    font-weight: 500;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.acc-inputs input{
+    width: 70%;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.acc-sub-btn{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc-btn{
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.0);
+    border: 1px solid var(--primarycolor);
+    color: var(--primarycolor);
+    cursor: pointer;
+}
+
+.acc-btn:hover{
+    padding: 8px;
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+.complaints{
+    width: 80vw;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.report{
+    background-color: yellow;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    box-shadow: 2px 5px 5px var(--shadow);
+}
+
+.complaints{
+    width: 70vw;
+    margin: auto;
+    background-color: var(--primarycoloropacity);
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 5px var(--shadow);
+}
+
+.complaints-wrap{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.first-line, .second-line{
+    width: 90%;
+    margin: auto;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options{
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.options img{
+    background-color: #ccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--shadow);
+}
+
+.header-edit{
+    color: var(--maintext);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: small;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px var(--shadow);
+}
+
+.delete{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+    background-color: red;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px var(--shadow);
+}
+
+.options a{
+    text-decoration: none;
+    color: var(--maintext);
+}
+
+
+
+
+/* Mobile design  */
+@media only screen and (max-width: 766px){
+.account-title{
+    width: 95vw;
+    height: 210px;
+    background-size: fit;
+    /* box-shadow: -2px 5px 6px var(--shadow); */
+}
+
+.account-info-wrapper{
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.sides{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.sides h2{
+    margin-left: 10px;
+}
+
+
+.left-side-details{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.vip-sect h2{
+    margin-left: 10px;
+    text-shadow: -1px 5px 5px var(--shadow);
+}
+
+.left-side-balance{
+    width: 100%;
+}
+
+.left-side-balance h3{
+    margin-left: 10px;
+}
+
+.vip-sect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-form{
+    width: 95vw;
+}
+
+.account-input{
+    width: 95%;
+}
+
+.acc-inputs{
+    width: 100%;
+}
+
+.acc-inputs h2{
+    width: 40%;
+    word-wrap: break-word;
+}
+
+.acc-inputs input{
+    height: 60%;
+}
+
+.acc-inputss:disabled{
+    cursor: not-allowed;
+    border: 1px solid rgba(255, 0, 0, 0.404);
+}
+
+.complaints{
+    width: 95vw;
+    height: 300px;
+    background-color: rgba(98, 17, 130, 0.477);
+}
+
+.complaints-wrap{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-line, .second-line{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.options{
+    width: 50%;
+    margin: 5px;
+}
+
+.header-edit{
+    color: white;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.options a{
+    color: white;
+}
+
+.delete{
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    box-shadow: none;
+    color: red;
+}
+
+.acc-btn{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+}

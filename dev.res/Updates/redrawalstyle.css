@@ -8,10 +8,6 @@
 body{
     background-color:var(--bgprimary);
     overflow-x: hidden;
-
-}
-.trans-heading{
-    float: center;
 }
 
 .balance-field{
@@ -29,13 +25,13 @@ body{
 .balance-wrap{
    width: 40%;
    height: 100%;
-   /* background-image: url(../../assets/withdrawalDesign.png); */
+   background-image: url(../assets/withdrawalDesign.png);
 }
 
 .balance-wrapd{
    width: 40%;
    height: 100%;
-   /* background-image: url(../../assets/DepositDesign.png); */
+   background-image: url(../assets/DepositDesign.png);
 }
 
 .balance-wrapper{

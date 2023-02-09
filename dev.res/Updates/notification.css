@@ -1,0 +1,97 @@
+:root{
+    --primaryfontcolor: rgb(108, 11, 235);
+    --bgprimary: rgba(228, 228, 228, 0.753);
+    --maintext: rgb(107, 107, 107);
+    --shadow: rgb(0,0,0,0.5);
+    --primarycolor: rgb(82, 13, 172);
+    --primarycoloropacity: rgba(82, 13, 172,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.noti-head{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px var(--shadow);
+}
+
+.noti-headings{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid silver;
+    line-height: 50px;
+
+}
+
+.noti-headings a{
+    text-decoration: none;
+    color: var(--maintext);
+    font-size: large;
+    height: 20%;
+}
+
+.not-list{
+    width: 70%;
+    height: 80%;
+    margin:auto ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.notifications{
+    width: 80%;
+    margin: auto;
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    box-shadow: 3px 5px 5px var(--shadow);
+}
+
+.notifications h3{
+    border-bottom: 1px solid silver;
+}
+
+.notifications img{
+    float: right;
+}
+
+
+
+
+/* responsive design  */
+@media only screen and (max-width: 766px){
+.noti-head{
+    width: 100%;
+    height: 90vh;
+}
+
+.noti-headings{
+    box-shadow: 1px 2px 5px var(--shadow);
+    padding: 0 10px;
+}
+
+.not-list{
+    width: 100%;
+    margin: auto;
+}
+}
