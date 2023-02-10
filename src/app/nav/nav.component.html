@@ -4,17 +4,18 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list class="fw-bold">
       <a mat-list-item [routerLink]="auth?'earn':'login'">earn</a>
       <a mat-list-item [routerLink]="auth?'account':'login'">account</a>
-      <a mat-list-item [routerLink]="auth?'transactions':'login'">transactions</a>
+      <a mat-list-item [routerLink]="auth?'deposit':'login'">deposit</a>
+      <a mat-list-item [routerLink]="auth?'withdrawal':'login'">withdrawal</a>
       <a mat-list-item [routerLink]="auth?'referals':'login'">referalls</a>
-      <a mat-list-item [routerLink]="auth?'':'login'">logout</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item [routerLink]="auth?'':'login'" (click)="loginout()" class="btn btn-danger btn-sm mt-3">{{auth?'logout':'login'}}</a>
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="container justify-content-center">
+    <mat-toolbar  class="container main-nav-icon justify-content-center">
     <div class="row w-100 align-items-center justify-contents-center me-auto">
       <div class="col">
       <button
@@ -29,14 +30,17 @@
       <div class="col">
         <span>e4u</span>
       </div>
-      <div class="col">
-        <span>e4u logo</span>
+      <div class="col e4ucol ">
+        <div class="e4udesign"></div>
+        <div class="e4udiv">
+          <img class="logo" src="../assets/icons/logo.png" alt="logo" width="70px" height="65px">
+        </div>
       </div>
       <div class="col  ms-auto">notifications</div>
        
     </div>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <!-- nav bar contents goes here -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

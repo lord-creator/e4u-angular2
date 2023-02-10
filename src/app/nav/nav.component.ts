@@ -11,6 +11,9 @@ import { map, shareReplay } from 'rxjs/operators';
 export class NavComponent {
    
   auth: boolean =  true
+  loginout(){
+    this.auth=!this.auth
+  }
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),

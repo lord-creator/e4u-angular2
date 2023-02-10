@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReferallsComponent } from './referalls/referalls.component';
+import { SignupComponent } from './signup/signup.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'account', component: AccountComponent},
   {path: 'account', component: ReferallsComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent},
   {path: 'deposit', component: DepositComponent},
   {path: 'referals', component: ReferallsComponent},
   {path: '**', component: NotfoundComponent}
