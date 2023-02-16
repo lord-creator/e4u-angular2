@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
+import { DatatableComponent } from './datatable/datatable.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { EarnComponent } from './earn/earn.component';
 import { LandingComponent } from './landing/landing.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'deposit', component: DepositComponent},
   {path: 'referals', component: ReferallsComponent},
+  {path: 'user', component: DatatableComponent},
   {path: '**', component: NotfoundComponent}
 ];
 

@@ -1,4 +1,5 @@
-
+<div class="alert alert-success" >{{successMessage}}</div>
+      <!-- <button mat-raised-button color="primary">hello orld</button> -->
     <div class="over-all-wrapper">
         <div class="white-bg">
     <!--singup small screen.andriod devices-->
@@ -9,27 +10,90 @@
         <h1>Sign Up</h1>
         
     </div>
-        <form action="earn" method="POST">
+
+    <!-- old form -->
+         <form #signupform="ngForm" (ngSubmit)="signup()">
             <div class="detail-info">
             <div class="form-info">
-                <label for="username" >
-                    <input type="text" name="username" id="usernamesm" placeholder="Create Username" required>
+                <label class="form-group" for="username" >
+                    <input 
+                        #user_username="ngModel"
+                        class="form-control" 
+                        type="text" 
+                        name="username" 
+                        minlength="5"
+                        maxlength="20"
+                        id="usernamesm" 
+                        [(ngModel)]="user.username"
+                        placeholder="Create Username" required/>
                 </label>
-                <label for="password" >
-                    <input type="password" name="password" id="passwordsm" placeholder="new password" required>
+                    <!-- warning -->
+                <div *ngIf="user_username.errors?.['minlength']" class="alert alert-danger">
+                    Username is too short
+                </div>
+
+
+                <label class="form-group" for="password" >
+                    <input 
+                        #signup_password="ngModel"
+                        class="form-control"
+                        minlength="6"  
+                        max="20"
+                        type="password" 
+                        name="password" 
+                        id="passwordsm" 
+                        placeholder="new password"
+                        [(ngModel)]="user.password"  
+                        required>
                 </label>
-                <label for="cpassword" >
-                    <input type="password" name="cpassword" id="cpassword" placeholder="confirm password" required>
+                    
+                <div *ngIf="signup_password.errors?.['minlength']" class="alert alert-danger">
+                    password is too short
+                </div>
+
+
+                <label class="form-group" for="cpassword" >
+                    <input 
+                        #signup_confirm_password="ngModel"
+                        minlength="2"
+                        maxlength="20"
+                        class="form-control" 
+                        type="password" 
+                        name="cpassword" 
+                        id="cpassword" 
+                        placeholder="confirm password"
+                        [(ngModel)]="confirm_password" 
+                        required>
                 </label>
-                <label for="email" >
-                    <input type="email" name="email" id="email" placeholder="email" required>
+                <!-- warning -->
+                    
+                <div *ngIf="signup_confirm_password.value != user.password &&  confirm_password !=''" class="alert alert-danger">
+                    passwords donot match
+                </div>   
+                
+
+                <label class="form-group" for="email" >
+                    <input 
+                    #emailstuff="ngModel"
+                    class="form-control" 
+                    email
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="email"
+                    [(ngModel)]="user.email"
+                    required>
                 </label>
-                <label for="telephone" >
-                    <input type="tel" name="tel" id="tel" placeholder="phone number" required>
-                </label>
+                <div class="alert alert-warning" *ngIf="emailstuff?.['touched'] && emailstuff?.['invalid']">
+                    *email not valid
+                 </div>
+                
+                <!-- <label class="form-group" for="telephone" >
+                    <input class="form-control" type="tel" name="tel" id="tel" placeholder="phone number" required>
+                </label> -->
             </div>
-            <div class="form-cta">
-                <input type="submit" value="SIGN UP" />
+            <div class="btn">
+                <button mat-raised-button class="sub"  color="primary"   [disabled]="signupform.invalid" type="submit"  >register</button>
             </div>
             </div>               
         </form>

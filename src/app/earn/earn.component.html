@@ -5,34 +5,34 @@
         <article class="user-head-wrapper">
             <div class="user-head">
             <img class="user-icon" src="../assets/icons/Account.png" alt="user-icon" width="40px" height="40px">
-            <h3 class="user-id">Hi Username</h3>
+            <h3 class="user-id">Hi {{user.user.username}}</h3>
             </div>
         </article>
         </div>
         <div class="icons">
             <article class="icon-wrapper">
                 <img src="../assets/icons/money.png" alt="dollar sign" width="30px" height="40px">
-                <h3>5000frs</h3>
+                <h3>{{ user.user.balance }}frs</h3>
                 <h4>Balance</h4>
             </article>
             <article class="icon-wrapper">
                 <img src="../assets/icons/earn.png" alt="earn icon" width="40px" height="40px">
-                <h3>500frs</h3>
+                <h3>{{ user.user.today_earnings }}frs</h3>
                 <h4>Today earnings</h4>
             </article>
             <article class="icon-wrapper">
                 <img src="../assets/icons/play.png" alt="actions icon" width="100px" height="100px" >
-                <h3>8</h3>
+                <h3>{{ user.user.actions }}</h3>
                 <h4>Actions</h4>
             </article>
             <article class="icon-wrapper">
                 <img src="../assets/icons/video.png" alt="completed action icons" width="40px" height="40px">
-                <h3>2</h3>
+                <h3>{{ user.user.completed_actions }}</h3>
                 <h4>Completed actions</h4>
             </article>
             <article class="icon-wrapper">
                 <img src="../assets/icons/Account.png" alt="Referall icon" width="40px" height="40px">
-                <h3>2</h3>
+                <h3>{{ user.user.referals.length}}</h3>
                 <h4>Referalls</h4>
             </article>
         </div>
@@ -46,7 +46,7 @@
             <div class="mainmenu-icon">
             <img src="../assets/icons/play.png" alt="play logo" width="100px" height="100px">
             </div>
-            <button>Earn Now</button>
+            <button mat-raised-button>Earn now</button>
             </div>
         </article>
         <article class="mainmenu-design">
@@ -55,7 +55,7 @@
             <div class="mainmenu-icon">
             <img src="../assets/icons/play.png" alt="play logo" width="100px" height="100px">
             </div>
-            <button>Earn Now</button>
+            <button mat-raised-button>Earn now</button>
             </div>
         </article>
     </section>

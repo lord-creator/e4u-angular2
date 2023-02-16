@@ -1,8 +1,8 @@
-<div class=" container height-100">
-    <div class="row height-100 ">
-        <div [routerLink]="'earn'" class="btn col height-100">Earn</div>
-        <div [routerLink]="'transactions'" class="btn col">Transactions</div>
-        <div [routerLink]="'account'" class="btn col">Accounts</div>
-        <div [routerLink]="'referals'" class="btn col">Referals</div>
-    </div>
-</div>
+<!-- <div class=" container height-100"> -->
+    <mat-button-toggle-group class="row-fluid height-100 w-100">
+        <mat-button-toggle color="primary" [routerLink]="'earn'" class=" col height-100">Earn</mat-button-toggle>
+        <mat-button-toggle [routerLink]="'transactions'" class=" col">Transactions</mat-button-toggle>
+        <mat-button-toggle [routerLink]="'account'" class=" col">Accounts</mat-button-toggle>
+        <mat-button-toggle [routerLink]="'referals'" class=" col">Referals</mat-button-toggle>
+    </mat-button-toggle-group>
+<!-- </div> -->

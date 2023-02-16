@@ -1,11 +1,13 @@
 <!-- <h1 class="center">{{title}}</h1> -->
-
+<!-- <div class="btn">{{user.auth.auth}}</div> -->
 <!-- <app-login></app-login> -->
 <!-- <app-landing></app-landing> -->
 <!-- <router-outlet></router-outlet> -->
-
-<app-nav></app-nav>
-<app-menunav class="btn  w-75 start-50 translate-middle"></app-menunav>
+<!-- <div><span matBadge="0" matBadgeosition="above before">notifications</span></div> -->
+<app-nav (authout)="check($event)"></app-nav>
+<app-menunav *ngIf="user.auth.auth" class="btn  w-75 start-50 translate-middle"></app-menunav>
+<!-- <div class="div">{{ auth?'authout':'NA'}}</div>
+<div  class="btn btn-primary">{{ authoutt }}</div> -->
 <!-- <app-login></app-login> -->
 
 <!-- <app-menunav></app-menunav> -->
