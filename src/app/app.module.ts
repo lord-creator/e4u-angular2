@@ -23,6 +23,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { FormsModule } from '@angular/forms';
 import { MaterialsModule } from './materials/materials.module';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MaterialsModule } from './materials/materials.module';
     MenunavComponent,
     NavComponent,
     SignupComponent,
-    DatatableComponent
+    DatatableComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

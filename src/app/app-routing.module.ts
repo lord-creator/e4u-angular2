@@ -7,6 +7,7 @@ import { EarnComponent } from './earn/earn.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { NotificationComponent } from './notification/notification.component';
 import { ReferallsComponent } from './referalls/referalls.component';
 import { SignupComponent } from './signup/signup.component';
 import { TransactionsComponent } from './transactions/transactions.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'deposit', component: DepositComponent},
   {path: 'referals', component: ReferallsComponent},
   {path: 'user', component: DatatableComponent},
+  {path: 'notification', component: NotificationComponent},
   {path: '**', component: NotfoundComponent}
 ];
 

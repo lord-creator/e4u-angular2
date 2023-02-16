@@ -1,0 +1,60 @@
+
+    <section class="trans-heading">
+        <h1>Notification</h1>
+    </section>
+
+    <!-- notification sections -->
+    
+    <section class="noti-head">
+        <article class="noti-headings">
+        <div>
+        <span><a href="#">Personal Info</a></span>
+        <img src="../assets/red.png" alt="" width="10px" height="10px">
+    </div>
+        <div>
+        <span><a href="#">General Info</a></span>
+        <img src="../assets/red.png" alt="" width="10px" height="10px">
+    </div>
+        <div>
+        <span><a href="#">Support Desk</a></span>
+        <img src="../assets/red.png" alt="" width="10px" height="10px">
+        </div>
+        </article>
+        <article class="not-list">
+            <div class="card">
+                <mat-card *ngFor="let notification of nots">
+                    <mat-card-title>
+                        {{'today'}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        {{notification}}
+                        
+                    </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-raised-button>Mark as read</button>
+                    </mat-card-actions>
+    
+                </mat-card>
+            </div>
+                <button mat-flat-button (click)="messages()" *ngIf="!showold">Show older messages</button>
+                <button mat-flat-button *ngIf="showold" (click)="messages()">Hide older</button>
+
+             <div class="card" *ngIf="showold">
+                <mat-card *ngFor="let notification of oldnots">
+                    <mat-card-title>
+                        {{'Older message'}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        {{notification}}
+                        
+                    </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-raised-button>Mark as read</button>
+                    </mat-card-actions>
+                </mat-card>
+             </div>
+            <button mat-flat-button *ngIf="showold" (click)="messages()">Hide older</button>
+        </article>
+    </section>
+
+
